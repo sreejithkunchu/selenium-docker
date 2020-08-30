@@ -1,0 +1,57 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "Seach module suite" thread-count = "9" parallel = "tests">
+    <test name="Search Java">
+        <parameter name = "keyword" value = "java"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+    <test name="Search QA">
+        <parameter name = "keyword" value = "QA"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+    <test name="Search Jquery">
+        <parameter name = "keyword" value = "jquery"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+    <test name="Search Java1">
+        <parameter name = "keyword" value = "java"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+    <test name="Search QA1">
+        <parameter name = "keyword" value = "QA"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+    <test name="Search Jquery1">
+        <parameter name = "keyword" value = "jquery"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+    <test name="Search Java2">
+        <parameter name = "keyword" value = "java"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+    <test name="Search QA2">
+        <parameter name = "keyword" value = "QA"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+    <test name="Search Jquery2">
+        <parameter name = "keyword" value = "jquery"/>
+        <classes>
+            <class name = "com.searchmodule.testBy.SearchTestBy"/>
+        </classes>
+    </test>
+</suite>
