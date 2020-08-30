@@ -8,14 +8,14 @@ pipeline {
         }
         stage('Build Image') {
             steps {
-                sh "docker build -t='vinsdocker/selenium-docker' ."
+                sh "docker build -t='sreejithkunchu/docker-selenium' ."
             }
         }
         stage('Push Image') {
             steps {
 			    withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
 			        sh "docker login --username=${user} --password=${pass}"
-			        sh "docker push vinsdocker/selenium-docker:latest"
+			        sh "docker push sreejithkunchu/docker-selenium:latest"
 			    }
             }
         }
